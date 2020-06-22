@@ -6,7 +6,7 @@
              mc:Ignorable="d"
              x:Class="App_RelativeLayout_Aula.RelativeLayoutPage">
 
-    <RelativeLayout>
+    <!--<RelativeLayout>
 
         <BoxView Color="Lime" x:Name="box1"
                  RelativeLayout.WidthConstraint ="{ConstraintExpression
@@ -46,7 +46,7 @@
                   Constant=100}"
                  />
 
-    </RelativeLayout>
+    </RelativeLayout>-->
     
 </ContentPage>
                  
