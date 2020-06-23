@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="App_RelativeLayout_Aula.RelativeLayout_Exercicio1">
+
+    <RelativeLayout>
+        <Label x:Name="MainLabel" Text="RelativeLayout" BackgroundColor="Lime" 
+               TextColor="Black" FontSize="24"
+               
+               RelativeLayout.WidthConstraint="{ConstraintExpression
+                    Type=RelativeToParent,
+                    Property=Width,
+                    Factor=0.9,
+                    Constant=0}"
+               
+               RelativeLayout.YConstraint="{ConstraintExpression
+                    Type=RelativeToParent,
+                    Property=Y,
+                    Constant=20}"
+               
+               RelativeLayout.XConstraint="{ConstraintExpression
+                    Type=RelativeToParent,
+                    Property=X,
+                    Constant=20}" />
+
+        <Button Text="Salvar" BackgroundColor="Red" TextColor="White" WidthRequest="100"
+                HeightRequest="100" FontSize="Medium"
+                
+                RelativeLayout.YConstraint="{ConstraintExpression
+                    Type=RelativeToView,
+                    ElementName=MainLabel,
+                    Property=Y,
+                    Constant=40}"
+                
+                RelativeLayout.XConstraint="{ConstraintExpression
+                    Type=RelativeToView,
+                    ElementName=MainLabel,
+                    Property=X,
+                    Constant=0}" />
+    </RelativeLayout>
+</ContentPage>
+

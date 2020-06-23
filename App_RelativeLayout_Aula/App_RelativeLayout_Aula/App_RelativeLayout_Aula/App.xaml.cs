@@ -10,7 +10,7 @@ namespace App_RelativeLayout_Aula
         {
             InitializeComponent();
 
-            MainPage = new RelativeLayoutPage();
+            MainPage = new RelativeLayoutExercicio3();
         }
 
         protected override void OnStart()
